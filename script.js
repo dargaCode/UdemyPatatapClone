@@ -17,6 +17,7 @@ function onFrame(event) {
     element.fillColor.hue += 2;
     element.scale(0.92);
   });
+  removeInvisibleCircles();
 }
 
 // FUNCTIONS
@@ -30,4 +31,13 @@ function addRandomCircle() {
 function getRandomPointInView() {
   var maxPoint = new Point(view.size.width, view.size.height);
   return maxPoint * Point.random();
+}
+
+function removeInvisibleCircles() {
+  console.log(circles);
+  if (circles.length > 0) {
+    if (circles[0].bounds.width < 1) {
+      circles.shift();
+    }
+  }
 }
