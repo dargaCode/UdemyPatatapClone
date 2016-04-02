@@ -1,12 +1,15 @@
 var RADIUS = 50;
 
+var circles = [];
+
 function onKeyDown(event) {
-  createRandomCircle();
+  addRandomCircle();
 }
 
-function createRandomCircle() {
+function addRandomCircle() {
   var circle = new Path.Circle(getRandomPointInView(), RADIUS);
   circle.fillColor = "purple";
+  circles.push(circle);
 }
 
 function getRandomPointInView() {
