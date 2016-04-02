@@ -5,12 +5,8 @@ function onKeyDown(event) {
 }
 
 function createRandomCircle() {
-  new Path.Circle({
-    center: getRandomPointInView(),
-    radius: RADIUS,
-    strokeColor: "black",
-    fillColor: "purple"
-  });
+  var circle = new Path.Circle(getRandomPointInView(), RADIUS);
+  circle.fillColor = "purple";
 }
 
 function getRandomPointInView() {
