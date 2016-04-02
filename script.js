@@ -1,6 +1,6 @@
 // CONSTANTS
 
-var RADIUS = 50;
+var RADIUS = 500;
 
 // VARIABLES
 
@@ -14,8 +14,8 @@ function onKeyDown(event) {
 
 function onFrame(event) {
   circles.forEach(function(element) {
-    element.fillColor.hue += 2;
-    element.scale(0.92);
+    element.fillColor.hue += 1;
+    element.scale(0.90);
   });
   removeInvisibleCircles();
 }
