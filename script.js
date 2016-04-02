@@ -34,7 +34,6 @@ function getRandomPointInView() {
 }
 
 function removeInvisibleCircles() {
-  console.log(circles);
   if (circles.length > 0) {
     if (circles[0].bounds.width < 1) {
       circles.shift();
