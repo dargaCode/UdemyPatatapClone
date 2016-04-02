@@ -1,10 +1,18 @@
+// CONSTANTS
+
 var RADIUS = 50;
 
+// VARIABLES
+
 var circles = [];
+
+// EVENTS
 
 function onKeyDown(event) {
   addRandomCircle();
 }
+
+// FUNCTIONS
 
 function addRandomCircle() {
   var circle = new Path.Circle(getRandomPointInView(), RADIUS);
