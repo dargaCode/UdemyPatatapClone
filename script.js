@@ -1,4 +1,4 @@
-RADIUS = 50;
+var RADIUS = 50;
 
 function onKeyDown(event) {
   createRandomCircle();
