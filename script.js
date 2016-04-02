@@ -1,7 +1,6 @@
 RADIUS = 50;
 
 function onKeyDown(event) {
-  console.log(getRandomPointInView());
   createRandomCircle();
 }
 
