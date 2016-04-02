@@ -12,6 +12,13 @@ function onKeyDown(event) {
   addRandomCircle();
 }
 
+function onFrame(event) {
+  circles.forEach(function(element) {
+    element.fillColor.hue += 2;
+    element.scale(0.92);
+  });
+}
+
 // FUNCTIONS
 
 function addRandomCircle() {
