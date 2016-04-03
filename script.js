@@ -3,32 +3,32 @@
 var RADIUS = 500;
 
 var KEYS = {
-  "q": {sound: "sounds/bubbles.mp3"},
-  "w": {sound: "sounds/clay.mp3"},
-  "e": {sound: "sounds/confetti.mp3"},
-  "r": {sound: "sounds/corona.mp3"},
-  "t": {sound: "sounds/dotted-spiral.mp3"},
-  "y": {sound: "sounds/flash-1.mp3"},
-  "u": {sound: "sounds/flash-2.mp3"},
-  "i": {sound: "sounds/flash-3.mp3"},
-  "o": {sound: "sounds/glimmer.mp3"},
-  "p": {sound: "sounds/moon.mp3"},
-  "a": {sound: "sounds/pinwheel.mp3"},
-  "s": {sound: "sounds/piston-1.mp3"},
-  "d": {sound: "sounds/piston-2.mp3"},
-  "f": {sound: "sounds/piston-3.mp3"},
-  "g": {sound: "sounds/prism-1.mp3"},
-  "h": {sound: "sounds/prism-2.mp3"},
-  "j": {sound: "sounds/prism-3.mp3"},
-  "k": {sound: "sounds/splits.mp3"},
-  "l": {sound: "sounds/squiggle.mp3"},
-  "z": {sound: "sounds/strike.mp3"},
-  "x": {sound: "sounds/suspension.mp3"},
-  "c": {sound: "sounds/timer.mp3"},
-  "v": {sound: "sounds/ufo.mp3"},
-  "b": {sound: "sounds/veil.mp3"},
-  "n": {sound: "sounds/wipe.mp3"},
-  "m": {sound: "sounds/zig-zag.mp3"}
+  "q": {color: "red", sound: "sounds/bubbles.mp3"},
+  "w": {color: "red", sound: "sounds/clay.mp3"},
+  "e": {color: "red", sound: "sounds/confetti.mp3"},
+  "r": {color: "red", sound: "sounds/corona.mp3"},
+  "t": {color: "red", sound: "sounds/dotted-spiral.mp3"},
+  "y": {color: "red", sound: "sounds/flash-1.mp3"},
+  "u": {color: "red", sound: "sounds/flash-2.mp3"},
+  "i": {color: "red", sound: "sounds/flash-3.mp3"},
+  "o": {color: "red", sound: "sounds/glimmer.mp3"},
+  "p": {color: "red", sound: "sounds/moon.mp3"},
+  "a": {color: "red", sound: "sounds/pinwheel.mp3"},
+  "s": {color: "red", sound: "sounds/piston-1.mp3"},
+  "d": {color: "red", sound: "sounds/piston-2.mp3"},
+  "f": {color: "red", sound: "sounds/piston-3.mp3"},
+  "g": {color: "red", sound: "sounds/prism-1.mp3"},
+  "h": {color: "red", sound: "sounds/prism-2.mp3"},
+  "j": {color: "red", sound: "sounds/prism-3.mp3"},
+  "k": {color: "red", sound: "sounds/splits.mp3"},
+  "l": {color: "red", sound: "sounds/squiggle.mp3"},
+  "z": {color: "red", sound: "sounds/strike.mp3"},
+  "x": {color: "red", sound: "sounds/suspension.mp3"},
+  "c": {color: "red", sound: "sounds/timer.mp3"},
+  "v": {color: "red", sound: "sounds/ufo.mp3"},
+  "b": {color: "red", sound: "sounds/veil.mp3"},
+  "n": {color: "red", sound: "sounds/wipe.mp3"},
+  "m": {color: "red", sound: "sounds/zig-zag.mp3"}
 };
 
 // VARIABLES
@@ -40,9 +40,10 @@ var circles = [];
 function onKeyDown(event) {
   var key = event.key;
   if (KEYS[key]) {
-    soundPath = KEYS[key].sound;
+    var soundPath = KEYS[key].sound;
+    var color = KEYS[key].color;
     playSoundFromPath(soundPath);
-    addRandomCircle();
+    addRandomCircle(color);
   }
 }
 
@@ -56,9 +57,9 @@ function onFrame(event) {
 
 // FUNCTIONS
 
-function addRandomCircle() {
+function addRandomCircle(color) {
   var circle = new Path.Circle(getRandomPointInView(), RADIUS);
-  circle.fillColor = "purple";
+  circle.fillColor = color;
   circles.push(circle);
 }
 
