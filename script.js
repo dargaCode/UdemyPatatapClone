@@ -6,7 +6,7 @@ var KEYS = {
   "q": {color: "#dc0e0e", sound: "sounds/bubbles.mp3"},
   "w": {color: "#24a2a6", sound: "sounds/clay.mp3"},
   "e": {color: "#98d930", sound: "sounds/confetti.mp3"},
-  "r": {color: "db5be2", sound: "sounds/corona.mp3"},
+  "r": {color: "#db5be2", sound: "sounds/corona.mp3"},
   "t": {color: "#7ea456", sound: "sounds/dotted-spiral.mp3"},
   "y": {color: "#5ca748", sound: "sounds/flash-1.mp3"},
   "u": {color: "#0db4c1", sound: "sounds/flash-2.mp3"},
