@@ -77,6 +77,10 @@ function playSoundFromPath(path) {
 function removeInvisibleCircles() {
   if (circles.length > 0) {
     if (circles[0].bounds.width < 1) {
+      /* If circle isn't colored black before removing, holding down
+      keys for a long time results in tiny dots that remain permanently
+      on the canvas */
+      circles[0].fillColor = "black";
       circles.shift();
     }
   }
