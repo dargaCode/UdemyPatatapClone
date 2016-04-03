@@ -49,7 +49,7 @@ function onKeyDown(event) {
 
 function onFrame(event) {
   circles.forEach(function(element) {
-    element.fillColor.hue += 1;
+    element.fillColor.hue += 1.5;
     element.scale(0.90);
   });
   removeInvisibleCircles();
