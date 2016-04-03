@@ -5,7 +5,7 @@
 
 <p>Clone functionality from <a href="http://www.patatap.com/">Patatap</a>, using <a href="http://paperjs.org/">Paper.js</a>, <a href="http://www.howlerjs.com">howler.js</a>, and sounds from <a href="https://github.com/jonobr1/Neuronal-Synchrony">Neuronal Synchrony</a>.</p>
 
-<p>Pressing any letter key creates a specific sound, and a circle of a specific color.</p>
+<p>Pressing any letter key plays a specific sound, and creates a circle of a specific color, which disappears into the distance.</p>
 
 <p>The colors and sounds are assigned artibrarily for this simple project. This is also the kind of thing that could use a loading bar.</p>
 
