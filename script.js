@@ -38,9 +38,12 @@ var circles = [];
 // EVENTS
 
 function onKeyDown(event) {
-  addRandomCircle();
-  var soundPath = SOUNDS[event.key];
-  playSoundFromPath(soundPath);
+  var key = event.key;
+  if (SOUNDS[key]) {
+    soundPath = SOUNDS[key];
+    playSoundFromPath(soundPath);
+    addRandomCircle();
+  }
 }
 
 function onFrame(event) {
