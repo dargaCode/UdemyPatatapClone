@@ -13,4 +13,4 @@
 
 <a href="http://dargacode.github.io/UdemyPatatapClone/"><b>Live Webpage</b></a>
 
-<img src ="http://40.media.tumblr.com/f326a36336b2c7fc76ee5bafed4dbef8/tumblr_inline_o51imkn2371tvc5hi_1280.png" width=“300" height="300">
+<img src ="http://40.media.tumblr.com/f326a36336b2c7fc76ee5bafed4dbef8/tumblr_inline_o51imkn2371tvc5hi_1280.png" width="550">
